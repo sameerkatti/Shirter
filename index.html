@@ -1,0 +1,182 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="author" content="Norman Steger">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles/000dee7e.main.css">
+        <script src="scripts/vendor/02cd11c8.modernizr.js"></script>
+        <script src="scripts/canvas2image.js"></script>
+    </head>
+    <body>
+        <div class="container">
+        	<h1>Shirter <span>v0.1 BETA</span></h1>
+        	<h2>T-Shirt Male Black Slim Cut</h2>
+        	
+        	<div id="shirt_area">
+        		<div id="shirt_image">
+        			<div id="shirt_main_img">
+        			
+        				<div id="inserted_motive">
+	        				
+	        				<div class="ui-resizable-handle ui-resizable-nw" id="nwgrip"></div>
+							<div class="ui-resizable-handle ui-resizable-ne" id="negrip"></div>
+							<div class="ui-resizable-handle ui-resizable-sw" id="swgrip"></div>
+							<div class="ui-resizable-handle ui-resizable-se" id="segrip"></div>
+        				</div>
+        				
+        				<img id="shirt_main_canvas" src="images/article/c6a72a7a.shirt-1.jpg" alt="T-Shirt Male Black Slim Cut" title="T-Shirt Male Black Slim Cut">
+					
+        			</div>
+        			
+        			<canvas id="final_image" width="400px" height="550px"></canvas>
+        			
+        			<div class="shirt_variants">
+	        			<ul>
+	        				<li><img class="shirt_variant_img" src="images/article/c6a72a7a.shirt-1.jpg" alt="T-Shirt Male Black Slim Cut" title="T-Shirt Male Black Slim Cut"></li>
+		        			<li><img class="shirt_variant_img" src="images/article/58220e67.shirt-2.jpg" alt="T-Shirt Male Blue Slim Cut" title="T-Shirt Male Blue Slim Cut"></li>
+		        			<li><img class="shirt_variant_img" src="images/article/f1eaba2e.shirt-3.jpg" alt="T-Shirt Male Gray Slim Cut" title="T-Shirt Male Gray Slim Cut"></li>
+		        			<li><img class="shirt_variant_img" src="images/article/a51ac456.shirt-4.jpg" alt="T-Shirt Male White Slim Cut" title="T-Shirt Male White Slim Cut"></li>
+	        			</ul>
+        			</div>
+        			
+        		</div>
+        		
+        		<div id="tabs">
+        			<ul>
+        				<li><a href="#tab-1"><i class="icon-heart"></i></a></li>
+        				<li><a href="#tab-2"><i class="icon-font"></i></a></li>
+        				<li><a href="#tab-3"><i class="icon-move"></i></a></li>
+        			</ul>
+        			
+        			<div id="tab-1">
+	        			<div id="shirt_motives">
+	        			<legend>Motiv</legend>
+		        			<ul>
+			        			<li><img class="shirt_motive" src="images/motives/smiley_black.png" alt=""></li>
+			        			<li><img class="shirt_motive white" src="images/motives/smiley_white.png" alt=""></li>
+			        			<li><img class="shirt_motive" src="images/motives/html5_black.png" alt=""></li>
+			        			<li><img class="shirt_motive white" src="images/motives/html5_white.png" alt=""></li>
+			        			<li><img class="shirt_motive" src="images/motives/apple_black.png" alt=""></li>
+			        			<li><img class="shirt_motive white" src="images/motives/apple_white.png" alt=""></li>
+			        			<li><img class="shirt_motive" src="images/motives/github.png" alt=""></li>
+			        			<li><img class="shirt_motive white" src="images/motives/android.png" alt=""></li>
+			        			<li><img class="shirt_motive" src="images/motives/stopacta.png" alt=""></li>
+		        			</ul>	        			
+		        		</div>
+		        		
+		        		<!--
+		        		<div id="url_inserter">
+		        			<div class="input-prepend">
+		        				<span class="add-on">URL</span>
+		        				<input type="text" id="shirt_motive_url" placeholder="http://mydomain.de/image.jpg" value="" />
+		        			</div>
+		        			<button class="btn"><i class="icon-check"></i> Insert Image</button>
+		        		</div>
+		        		-->
+        			</div>
+        			
+        			<div id="tab-2">
+	        			<div class="motive_controls">
+								
+								<legend>Text</legend>
+		        			 	<p><input type="text" id="motivetext" placeholder="Text eingeben" value="">
+			        			 	<br><br>
+		        			 	</p>
+		        			 	
+		        			 	<legend>Farbe</legend>
+		        			 	
+		        			 	<p>
+			        			 	<ul id="colorpicker">
+			        			 		<li><span class="black"></span></li>
+								 		<li><span class="white"></span></li>
+								 		<li><span class="red"></span></li>
+								 		<li><span class="green"></span></li>
+								 		<li><span class="blue"></span></li>
+								 		<li><span class="yellow"></span></li>
+			        			 	</ul>
+			        			 	<br><br>
+		        			 	</p>
+		        			 	
+		        			 	<legend>Style</legend>
+		        			 		<p>
+		        			
+			        			 		<select id="select-font">
+			        			 			<option>Font wählen...</option>
+			        			 			<option class="oxygen">Oxygen</option>
+			        			 			<option class="parisienne">Parisienne</option>
+			        			 			<option class="lobster">Lobster</option>
+			        			 		</select>
+		        			 	
+		        			 		</p>
+									
+							 		<p><button class="btn btn-small text_bigger" type="button"><i class="icon-plus"></i> bigger</button></p>
+		        			 		<p><button class="btn btn-small text_smaller" type="button"><i class="icon-minus"></i> smaller</button></p>
+		        		</div>
+        			</div>
+        			
+        			<div id="tab-3">
+	        			<div class="motive_controls">
+		        				
+		        				<legend>Größe</legend>
+								<p>
+			        			 	<button class="size_smaller"><i class="icon-resize-small"></i></button>
+			        			 	<button class="size_bigger"><i class="icon-resize-full"></i></button>
+			        			 	<br><br>
+								</p>
+		       
+		        			 
+		        			 <!--
+		        			 <div class="control_set">
+		        			 	<b>Winkel</b>
+		        			 	<button class="rotate_left">left</button>
+		        			 	<button class="rotate_right">right</button>
+		        			 </div>
+		        			 -->
+		        			 
+							 	<legend>Position</legend>
+							 	<p>
+			        			 	<button class="position_down"><i class="icon-chevron-down"></i></button>
+			        			 	<button class="position_up"><i class="icon-chevron-up"></i></button>
+			        			 	<button class="position_right"><i class="icon-chevron-right"></i></button>
+			        			 	<button class="position_left"><i class="icon-chevron-left"></i></button>
+							 	</p>
+		        	
+		        		
+		        		</div>
+
+        			</div>
+        			
+        			<button class="btn btn-primary btn-block" id="creator" download="meinshirt.png"><i class="icon-plus icon-white"></i> Shirt erzeugen!</button>
+        			
+        		</div>
+        				
+        	</div>
+        	
+        </div>
+        
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <script src="scripts/e9a8ba99.vendor.js"></script>
+
+        <script src="scripts/e80ac544.main.js"></script>
+
+        <script src="scripts/121395a4.coffee.js"></script>
+
+        <script src="scripts/76c21dca.plugins.js"></script>
+</body>
+</html>
